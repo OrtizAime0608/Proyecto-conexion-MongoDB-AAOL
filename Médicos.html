@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ZAFIDENT - Proyecto Dentista AAOL </title>
+	<style>
+
+	span{
+	   color:#000080;
+	}
+
+	body {
+    	background: #ADD8E6;
+    	font-family: sans-serif;
+    	padding: 30px;
+    	max-width: 500px;
+    	margin: 0 auto;
+	}
+
+	input[type="text"], input[type="date"] ,input[type="number"]{
+   	width: 100%;	padding: 8px;	
+	margin: 6px 0 16px 0;	
+	border: 1px solid #000080;
+    	border-radius: 6px;
+    	box-sizing: border-box;
+	}
+
+
+	input[type="submit"] {
+    	background: #ff4d6d;
+    	color: white;
+    	border: none;
+    	padding: 12px;
+    	border-radius: 6px;
+    	width: 100%;
+    	cursor: pointer;
+    	font-weight: bold;
+	}
+
+	input[type="submit"]:hover {
+    	background: #ff2a4b;
+	}
+
+
+	a {
+    	display: block;
+    	text-align: center;
+    	margin-top: 15px;
+    	color: #777;
+    	text-decoration: none;
+	}
+
+	footer {
+        color: #000080;
+        padding: 25px;
+        text-align: center;
+	width:100%;
+	margin-top:25px;
+        }
+
+	
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 30px; 
+        }
+
+	.encabezado {
+    	display: flex;         
+    	align-items: center;   
+    	justify-content: center; 
+    	gap: 15px;             
+    	margin-bottom: 20px;  
+	}
+	button{
+	font-family:Times New Roman;
+	font-size:20px;
+	width:auto;
+	height:50px;
+	background-color:#F0FFFF;
+	}
+	</style>
+</head>
+<body>
+	<header>
+    <div class="encabezado">
+    <img src="Zafident.png" alt="Zafident" class="logo">
+    <span style="font-size: 90px; font-weight: bold;">MEDICOS</span>
+    </div>
+
+<main>
+    <div class="form-container">
+        <form action="altas.html" method="POST">
+            <div class="form-group">
+                <label>Id_medico:</label>
+                <input type="number" name="medico" placeholder="Ej: 01,02..." required>
+            </div>
+           
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ej: Aime Ortiz" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Especialidad:</label>
+                <input type="text" name="esp" placeholder="Ej: Periodoncia" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Telefono:</label>
+                <input type="number" name="telefono" placeholder="Ej: 656 734 3344" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Domicilio:</label>
+                <input type="text" name="domicilio" placeholder="Ej: C.Brasil #5256" required>
+            </div>
+       
+            <div class="form-group">
+                <label>Horario:</label>
+                <input type="text" name="horario" placeholder="Ej: 8:00am-2:00pm" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cedula Profesional:</label>
+                <input type="number" name="cedula" placeholder="Ej: 8282828 " required>
+            </div>
+
+            <div class="form-group">
+                <label>Universidad:</label>
+                <input type="text" name="universidad" placeholder="Ej: UACJ" required>
+            </div>
+
+            <div class="form-group">
+                <label>Salario Mensual:</label>
+                <input type="number" name="salario" placeholder="Ej: $33,000" required>
+            </div>
+ 
+            <center><button type="submit" class="btn-submit">REGISTRAR MEDICO</button></center>
+        </form>
+    </div>
+
+    <a href="index.html" class="btn-back"> Volver al Inicio</a>
+</main>
+
+<footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>
